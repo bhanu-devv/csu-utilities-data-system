@@ -1,5 +1,5 @@
 # CSU Utilities Data Management System
-
+A data-driven system for managing and analyzing campus utility usage.
 ## Overview
 This project is being developed to manage and analyze utility data such as energy, water, and steam across campus buildings.
 
@@ -34,3 +34,15 @@ I am building this project as part of my learning and development in data system
   
 ## Notes
 This repository documents my progress as I build the system step by step.
+
+## Overview
+This project is a data management system designed to track and analyze utility usage across campus buildings.
+It uses a relational database schema built with PostgreSQL to store energy, water, and steam data. Backend models are implemented using Django to ensure structured data relationships and scalability.
+The system includes SQL-based analysis to identify usage trends and high-consumption buildings, helping improve decision-making and reduce manual reporting.
+
+## Tech Stack
+- PostgreSQL
+- Django
+- Python
+- SQL
+- Excel (Data Source)
