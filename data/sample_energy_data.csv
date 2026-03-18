@@ -1,0 +1,7 @@
+building_name,utility_type,usage_value,usage_unit,month,year
+Berkman Hall,Electricity,12500,kWh,1,2025
+Berkman Hall,Steam,30000,LB,1,2025
+Fenn Hall,Electricity,9800,kWh,1,2025
+Fenn Hall,Water,4500,gallons,1,2025
+Main Classroom,Electricity,15000,kWh,1,2025
+Main Classroom,Steam,28000,LB,1,2025
