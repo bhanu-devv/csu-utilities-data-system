@@ -37,4 +37,4 @@ This project is a normalized relational database system designed to monitor and 
 Completed as a final project for IST 634 Enterprise Databases.
 
 ## ER Diagram
-![ER Diagram](er_diagram.png)
+enterprise-database-system/er_diagram.png.jpeg
