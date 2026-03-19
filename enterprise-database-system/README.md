@@ -1,6 +1,5 @@
 # Campus Utilities SQL Database System
-
-A graduate-level enterprise database project developed for IST 634 Enterprise Databases at Cleveland State University.
+Enterprise-level SQL database system for campus utility management and analytics,project developed for IST 634 Enterprise Databases at Cleveland State University.
 
 ## Overview
 This project is a normalized relational database system designed to monitor and analyze campus utility operations, including buildings, meters, suppliers, employees, readings, maintenance logs, and alerts.
