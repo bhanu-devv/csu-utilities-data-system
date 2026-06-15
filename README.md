@@ -1,48 +1,68 @@
 # CSU Utilities Data Management System
-A data-driven system for managing and analyzing campus utility usage.
-## Overview
-This project is being developed to manage and analyze utility data such as energy, water, and steam across campus buildings.
 
-## Purpose
-The goal is to reduce manual reporting, improve data accuracy, and support better operational decision-making.
+A data management system for tracking and analyzing campus utility usage across buildings. This repository documents SQL database design, sample utility data, and planned backend extensions for a campus utility management workflow.
 
-## Current Scope
-- Organize utility data from Excel files
-- Store data in a PostgreSQL database
-- Build backend functionality using Django
-- Create dashboards for reporting and analysis
-  
-## Tech Stack
-- PostgreSQL
-- Django
-- Python
-- Power BI
-- Excel
-  
-## Project Status
-In Progress
+## Project Overview
 
-## My Role
-I am building this project as part of my learning and development in data systems. I am using AI tools to assist with development, and I am reviewing, learning, and customizing the work as I go.
+This project was built to explore how campus utility data — including energy, water, and steam consumption — can be organized, queried, and reported using a relational database. The primary implemented work is a fully normalized SQL database system developed as a final project for IST 634 Enterprise Databases at Cleveland State University.
 
-## Planned Features
-- Centralized utility data storage
-- Building-level usage tracking
-- Data validation workflow
-- Reporting dashboards
-- Search and filter options
-  
-## Notes
-This repository documents my progress as I build the system step by step.
+The repository also includes a separate simpler SQL schema and sample utility data for broader exploration. Backend and dashboard components are documented as planned extensions.
 
-## Overview
-This project is a data management system designed to track and analyze utility usage across campus buildings.
-It uses a relational database schema built with PostgreSQL to store energy, water, and steam data. Backend models are implemented using Django to ensure structured data relationships and scalability.
-The system includes SQL-based analysis to identify usage trends and high-consumption buildings, helping improve decision-making and reduce manual reporting.
+## What Is Implemented
 
-## Tech Stack
-- PostgreSQL
-- Django
-- Python
-- SQL
-- Excel (Data Source)
+### Enterprise Database System
+The strongest part of this project is the enterprise-level SQL database in the [`enterprise-database-system/`](./enterprise-database-system/) folder. It includes:
+
+- A 3NF normalized relational schema across multiple entities (buildings, meters, suppliers, employees, readings, maintenance logs, alerts)
+- - Complex SQL reporting queries
+  - - Stored procedures for automation
+    - - Triggers for data integrity and business rules
+      - - Indexing for performance optimization
+        - - An ER diagram
+         
+          - This work was completed as a final project for **IST 634 Enterprise Databases** at Cleveland State University.
+         
+          - ### SQL Schema and Queries
+          - The [`sql/`](./sql/) folder contains an independent schema, analysis queries, and a utility usage view built and tested with sample data.
+         
+          - ### Sample Data
+          - The [`data/`](./data/) folder contains a sample CSV dataset modeled after Energy Star Portfolio Manager exports, covering electricity, water, and steam usage across campus buildings.
+         
+          - ## Folder Structure
+         
+          - ```text
+            csu-utilities-data-system/
+            │
+            ├── enterprise-database-system/   ← Implemented: full SQL schema, procedures, triggers, ER diagram (IST 634)
+            ├── sql/                          ← Implemented: schema, queries, utility usage view
+            ├── data/                         ← Implemented: sample energy data CSV
+            ├── backend/                      ← Planned: Django backend (not yet implemented)
+            ├── screenshots/                  ← In progress: project output screenshots
+            └── README.md
+            ```
+
+            ## Tech Stack
+
+            **Implemented:**
+            - SQL (MySQL, PostgreSQL concepts)
+            - - Database normalization (3NF)
+              - - Stored procedures and triggers
+                - - ER modeling
+                  - - Excel / CSV (sample data)
+                   
+                    - **Planned extensions:**
+                    - - Django (backend models and API)
+                      - - Power BI (reporting dashboards)
+                        - - PostgreSQL (production database)
+                         
+                          - ## Project Status
+                         
+                          - **In Progress** — The enterprise database design and SQL analysis work are complete. Backend and dashboard components are planned for future development.
+                         
+                          - ## My Role
+                         
+                          - I designed and implemented the enterprise database schema, wrote the SQL queries and stored procedures, and built the sample data structure. The project is part of my coursework and ongoing learning in data systems and database engineering at Cleveland State University.
+                         
+                          - ## Privacy and Data Note
+                         
+                          - This repository contains only synthetic or anonymized sample data. No real utility bills, internal records, account numbers, or confidential organizational data are included.
