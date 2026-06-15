@@ -49,14 +49,11 @@ The strongest part of this project is the enterprise-level SQL database in the [
               - - Stored procedures and triggers
                 - - ER modeling
                   - - Excel / CSV (sample data)
-                   
                     - **Planned extensions:**
                     - - Django (backend models and API)
                       - - Power BI (reporting dashboards)
                         - - PostgreSQL (production database)
-                         
                           - ## Project Status
-                         
                           - **In Progress** — The enterprise database design and SQL analysis work are complete. Backend and dashboard components are planned for future development.
                          
                           - ## My Role
